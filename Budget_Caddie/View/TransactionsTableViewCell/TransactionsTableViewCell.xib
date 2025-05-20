@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransactionsTableViewCell" customModule="Budget_Caddie" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TransactionsTableViewCell" rowHeight="98" id="KGk-i7-Jjw" customClass="TransactionsTableViewCell" customModule="Budget_Caddie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="442" height="98"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="442" height="98"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cax-m8-MIO">
+                        <rect key="frame" x="8" y="8" width="48" height="48"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rn1-PF-xUJ">
+                                <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopping" translatesAutoresizingMaskIntoConstraints="NO" id="aEi-Al-Om2">
+                                <rect key="frame" x="4" y="4" width="40" height="40"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="rn1-PF-xUJ" secondAttribute="bottom" id="4qX-od-bNp"/>
+                            <constraint firstAttribute="trailing" secondItem="aEi-Al-Om2" secondAttribute="trailing" constant="4" id="E9n-JU-h8p"/>
+                            <constraint firstAttribute="width" secondItem="Cax-m8-MIO" secondAttribute="height" multiplier="1:1" id="EVm-9b-Klo"/>
+                            <constraint firstItem="rn1-PF-xUJ" firstAttribute="leading" secondItem="Cax-m8-MIO" secondAttribute="leading" id="L0O-XM-fG6"/>
+                            <constraint firstItem="aEi-Al-Om2" firstAttribute="leading" secondItem="Cax-m8-MIO" secondAttribute="leading" constant="4" id="RNM-ff-fDi"/>
+                            <constraint firstAttribute="trailing" secondItem="rn1-PF-xUJ" secondAttribute="trailing" id="T5l-Xl-JFa"/>
+                            <constraint firstItem="rn1-PF-xUJ" firstAttribute="top" secondItem="Cax-m8-MIO" secondAttribute="top" id="fH5-Bc-bLa"/>
+                            <constraint firstItem="aEi-Al-Om2" firstAttribute="centerY" secondItem="rn1-PF-xUJ" secondAttribute="centerY" id="mco-Lv-ubC"/>
+                            <constraint firstAttribute="height" constant="48" id="uq3-fB-jNE"/>
+                            <constraint firstAttribute="bottom" secondItem="aEi-Al-Om2" secondAttribute="bottom" constant="4" id="xIG-n4-WaK"/>
+                            <constraint firstItem="aEi-Al-Om2" firstAttribute="top" secondItem="Cax-m8-MIO" secondAttribute="top" constant="4" id="xYT-xV-d1r"/>
+                            <constraint firstItem="aEi-Al-Om2" firstAttribute="centerX" secondItem="rn1-PF-xUJ" secondAttribute="centerX" id="ybV-N0-UvS"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eu1-8E-F1B">
+                        <rect key="frame" x="68" y="11.333333333333332" width="102.66666666666669" height="41.666666666666671"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grocery Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tmy-ei-IXY">
+                                <rect key="frame" x="0.0" y="0.0" width="102.66666666666667" height="19.333333333333332"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aug 13" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n74-3N-5fc">
+                                <rect key="frame" x="0.0" y="27.333333333333325" width="102.66666666666667" height="14.333333333333332"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food &amp; Dining" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYi-gw-QpC">
+                        <rect key="frame" x="68" y="61" width="91.666666666666686" height="26"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- $120" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6g-WR-Pbx">
+                        <rect key="frame" x="332.66666666666669" y="39" width="49.333333333333314" height="20.333333333333329"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" systemColor="systemPinkColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fm0-oU-b9Y">
+                        <rect key="frame" x="396" y="38" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="IJY-01-0Wc"/>
+                            <constraint firstAttribute="width" secondItem="Fm0-oU-b9Y" secondAttribute="height" multiplier="1:1" id="hun-0v-mXL"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="TagSideBarIcon"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Fm0-oU-b9Y" firstAttribute="leading" secondItem="A6g-WR-Pbx" secondAttribute="trailing" constant="14" id="0Lh-1t-YvJ"/>
+                    <constraint firstAttribute="trailing" secondItem="Fm0-oU-b9Y" secondAttribute="trailing" constant="24" id="Cfm-wP-ol2"/>
+                    <constraint firstAttribute="bottom" secondItem="OYi-gw-QpC" secondAttribute="bottom" constant="11" id="Iff-y7-Kk0"/>
+                    <constraint firstItem="Cax-m8-MIO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="JPB-Cs-q6L"/>
+                    <constraint firstItem="Cax-m8-MIO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Lzo-Ox-4nb"/>
+                    <constraint firstItem="eu1-8E-F1B" firstAttribute="centerY" secondItem="Cax-m8-MIO" secondAttribute="centerY" id="M3L-GO-Q8D"/>
+                    <constraint firstItem="OYi-gw-QpC" firstAttribute="top" secondItem="eu1-8E-F1B" secondAttribute="bottom" constant="8" id="NbF-0a-EgR"/>
+                    <constraint firstItem="eu1-8E-F1B" firstAttribute="leading" secondItem="Cax-m8-MIO" secondAttribute="trailing" constant="12" id="PGh-3j-JfQ"/>
+                    <constraint firstItem="OYi-gw-QpC" firstAttribute="leading" secondItem="eu1-8E-F1B" secondAttribute="leading" id="jOd-Jc-T3q"/>
+                    <constraint firstItem="Fm0-oU-b9Y" firstAttribute="centerY" secondItem="A6g-WR-Pbx" secondAttribute="centerY" id="m3m-Ch-mTJ"/>
+                    <constraint firstItem="A6g-WR-Pbx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="wRM-CT-GdL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="categoryImage" destination="aEi-Al-Om2" id="L6f-du-8pX"/>
+                <outlet property="categoryName" destination="Tmy-ei-IXY" id="cTT-Eu-jiZ"/>
+                <outlet property="transactionAmount" destination="A6g-WR-Pbx" id="Ohc-bf-ful"/>
+                <outlet property="transactionDate" destination="n74-3N-5fc" id="SnJ-O9-ini"/>
+                <outlet property="transactionDescription" destination="OYi-gw-QpC" id="2s4-8b-MnZ"/>
+            </connections>
+            <point key="canvasLocation" x="232.06106870229007" y="17.605633802816904"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="TagSideBarIcon" width="5.6666665077209473" height="9.3333330154418945"/>
+        <image name="shopping" width="21.333333969116211" height="21.333333969116211"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
