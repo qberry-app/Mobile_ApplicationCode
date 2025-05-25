@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="66" id="KGk-i7-Jjw" customClass="BudgetSearchTableViewHeaderCell" customModule="Budget_Caddie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jzS-zG-AXB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XLm-F9-YzK" customClass="CustomView" customModule="Budget_Caddie" customModuleProvider="target">
+                                <rect key="frame" x="8" y="4" width="304" height="38"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Search" translatesAutoresizingMaskIntoConstraints="NO" id="pcu-dW-dPV">
+                                        <rect key="frame" x="8" y="7" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="pcu-dW-dPV" secondAttribute="height" multiplier="1:1" id="Og0-mh-8C1"/>
+                                            <constraint firstAttribute="height" constant="24" id="XcP-5O-GZt"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search Here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cgu-Zs-hIF">
+                                        <rect key="frame" x="48" y="0.0" width="232" height="38"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="cgu-Zs-hIF" secondAttribute="trailing" constant="24" id="FnK-1j-nCf"/>
+                                    <constraint firstItem="cgu-Zs-hIF" firstAttribute="top" secondItem="XLm-F9-YzK" secondAttribute="top" id="KqV-au-KaT"/>
+                                    <constraint firstItem="cgu-Zs-hIF" firstAttribute="leading" secondItem="pcu-dW-dPV" secondAttribute="trailing" constant="16" id="U5J-Js-eDj"/>
+                                    <constraint firstItem="pcu-dW-dPV" firstAttribute="centerY" secondItem="XLm-F9-YzK" secondAttribute="centerY" id="iDT-WZ-r5G"/>
+                                    <constraint firstAttribute="height" constant="38" id="kxf-OL-gNL"/>
+                                    <constraint firstItem="cgu-Zs-hIF" firstAttribute="centerY" secondItem="XLm-F9-YzK" secondAttribute="centerY" id="sid-WV-HU9"/>
+                                    <constraint firstItem="pcu-dW-dPV" firstAttribute="leading" secondItem="XLm-F9-YzK" secondAttribute="leading" constant="8" id="vKa-Rt-Wtg"/>
+                                    <constraint firstAttribute="bottom" secondItem="cgu-Zs-hIF" secondAttribute="bottom" id="yur-FR-dqG"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="XLm-F9-YzK" secondAttribute="trailing" constant="8" id="CcV-FJ-orF"/>
+                            <constraint firstItem="XLm-F9-YzK" firstAttribute="top" secondItem="jzS-zG-AXB" secondAttribute="top" constant="4" id="kx0-qx-CJ8"/>
+                            <constraint firstItem="XLm-F9-YzK" firstAttribute="leading" secondItem="jzS-zG-AXB" secondAttribute="leading" constant="8" id="rUu-hA-hS4"/>
+                            <constraint firstAttribute="bottom" secondItem="XLm-F9-YzK" secondAttribute="bottom" constant="24" id="uIr-vR-qWj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jzS-zG-AXB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5MA-Dm-uyc"/>
+                    <constraint firstAttribute="bottom" secondItem="jzS-zG-AXB" secondAttribute="bottom" id="i4s-jJ-det"/>
+                    <constraint firstAttribute="trailing" secondItem="jzS-zG-AXB" secondAttribute="trailing" id="iai-dj-1TT"/>
+                    <constraint firstItem="jzS-zG-AXB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="j8p-s5-ZCw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="161.83206106870227" y="6.3380281690140849"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Search" width="10.666666984558105" height="10.666666984558105"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

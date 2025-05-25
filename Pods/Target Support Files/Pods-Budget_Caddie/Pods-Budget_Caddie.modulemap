@@ -1,0 +1,6 @@
+framework module Pods_Budget_Caddie {
+  umbrella header "Pods-Budget_Caddie-umbrella.h"
+
+  export *
+  module * { export * }
+}
