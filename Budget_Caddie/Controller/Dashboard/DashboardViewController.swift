@@ -41,7 +41,11 @@ class DashboardViewController: UIViewController {
         tabBarViewController.indicators = [indicator]
         self.view.layoutSubviews()
         self.view.layoutIfNeeded()
+<<<<<<< HEAD
         let dashboard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "UserDashboardViewController") as! UserDashboardViewController
+=======
+        let dashboard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AddTransactionVCID") as! AddTransactionViewController
+>>>>>>> e0e6825da9059e02b32efbcb9c2d8b9aa4a61de7
         addControllerToSubview(controller: dashboard)
         adjustScrollViewHeight(controller: dashboard)
        
@@ -49,9 +53,15 @@ class DashboardViewController: UIViewController {
     
     @IBAction func didClickProfile(_ sender: UIButton) {
         print("Profile clicked")
+<<<<<<< HEAD
         let profileViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProfileVCID") as! ProfileViewController
         profileViewController.modalPresentationStyle = .fullScreen
         self.present(profileViewController, animated: true)
+=======
+//        let profileViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProfileVCID") as! ProfileViewController
+//        profileViewController.modalPresentationStyle = .fullScreen
+//        self.present(profileViewController, animated: true)
+>>>>>>> e0e6825da9059e02b32efbcb9c2d8b9aa4a61de7
     }
     
     @IBAction func didClickDateMovingForward(_ sender: UIButton) {
@@ -80,14 +90,24 @@ class DashboardViewController: UIViewController {
         }
     
     @IBAction func didClickFriendsNotificationView(_ sender: UIButton) {
+<<<<<<< HEAD
         let friendsListVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FriendsListVCID") as! FriendsListViewController
         friendsListVC.modalPresentationStyle = .fullScreen
         self.present(friendsListVC, animated: true)
+=======
+//        let friendsListVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FriendsListVCID") as! FriendsListViewController
+//        friendsListVC.modalPresentationStyle = .fullScreen
+//        self.present(friendsListVC, animated: true)
+>>>>>>> e0e6825da9059e02b32efbcb9c2d8b9aa4a61de7
     }
 }
 extension DashboardViewController: JXSegmentedViewDelegate {
     func segmentedView(_ segmentedView: JXSegmentedView, didSelectedItemAt index: Int) {
+<<<<<<< HEAD
         let dashboard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "UserDashboardViewController") as! UserDashboardViewController
+=======
+        let dashboard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "GoalsListVCID") as! GoalsListViewController
+>>>>>>> e0e6825da9059e02b32efbcb9c2d8b9aa4a61de7
         let addTransaction = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AddTransactionVCID") as! AddTransactionViewController
         let createCategory = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CreateCategoryViewController") as! CreateCategoryViewController
         let goalController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "GoalsListVCID") as? GoalsListViewController

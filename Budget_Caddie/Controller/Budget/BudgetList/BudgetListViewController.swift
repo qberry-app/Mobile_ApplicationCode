@@ -91,12 +91,21 @@ class BudgetListViewController: UIViewController {
     }
     @IBAction func didClickCreateCategoryButton(_ sender: UIButton) {
         print("Create Category clicked")
+<<<<<<< HEAD
         if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CreateCategoryViewController") as? CreateCategoryViewController {
             vc.modalPresentationStyle = .fullScreen
             vc.modalTransitionStyle = .crossDissolve
             vc.isFromDashboard = false
             self.present(vc, animated: true)
         }
+=======
+//        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CreateCategoryViewController") as? CreateCategoryViewController {
+//            vc.modalPresentationStyle = .fullScreen
+//            vc.modalTransitionStyle = .crossDissolve
+//            vc.isFromDashboard = false
+//            self.present(vc, animated: true)
+//        }
+>>>>>>> e0e6825da9059e02b32efbcb9c2d8b9aa4a61de7
     }
     
     @IBAction func didClickSharedCategoryButton(_ sender: UIButton) {

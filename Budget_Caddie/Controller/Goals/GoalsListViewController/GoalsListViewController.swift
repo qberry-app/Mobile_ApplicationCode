@@ -139,9 +139,15 @@ class GoalsListViewController: UIViewController {
     }
     
     @IBAction func didClickAddGoalButton(_ sender: UIButton) {
+<<<<<<< HEAD
         let createNewGoalVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CreateNewGoalVCID") as! CreateNewGoalViewController
         createNewGoalVC.modalPresentationStyle = .fullScreen
         self.present(createNewGoalVC, animated: true)
+=======
+//        let createNewGoalVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CreateNewGoalVCID") as! CreateNewGoalViewController
+//        createNewGoalVC.modalPresentationStyle = .fullScreen
+//        self.present(createNewGoalVC, animated: true)
+>>>>>>> e0e6825da9059e02b32efbcb9c2d8b9aa4a61de7
     }
     func performGoalSearchAction() {
         Utils.shared.startLoaderAnimation(vc: self)
@@ -239,6 +245,7 @@ extension GoalsListViewController: UITableViewDataSource {
 }
 extension GoalsListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+<<<<<<< HEAD
         if indexPath.section == 0 {
             let createNewGoalVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CreateNewGoalVCID") as! CreateNewGoalViewController
             createNewGoalVC.modalPresentationStyle = .fullScreen
@@ -252,6 +259,20 @@ extension GoalsListViewController: UITableViewDelegate {
             self.present(createNewGoalVC, animated: true)
         }
        
+=======
+//        if indexPath.section == 0 {
+//            let createNewGoalVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CreateNewGoalVCID") as! CreateNewGoalViewController
+//            createNewGoalVC.modalPresentationStyle = .fullScreen
+//            createNewGoalVC.currentGoalTypeNew = false
+//            if searchCompleted {
+//                createNewGoalVC.goalDetails = resultArray[indexPath.row]
+//            } else {
+//                createNewGoalVC.goalDetails = goalListArray[indexPath.row]
+//            }
+//            
+//            self.present(createNewGoalVC, animated: true)
+//        }
+>>>>>>> e0e6825da9059e02b32efbcb9c2d8b9aa4a61de7
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
             return 30

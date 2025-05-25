@@ -91,11 +91,19 @@ class TransactionsViewController: UIViewController {
 extension TransactionsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if transactionsListArray[indexPath.row].manualTransaction == true {
+<<<<<<< HEAD
             let updateTransactionVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "UpdateTransactionVCID") as! UpdateTransactionViewController
             updateTransactionVC.modalTransitionStyle = .crossDissolve
             updateTransactionVC.modalPresentationStyle = .fullScreen
             updateTransactionVC.transactionDetails = transactionsListArray[indexPath.row]
             self.present(updateTransactionVC, animated: true)
+=======
+//            let updateTransactionVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "UpdateTransactionVCID") as! UpdateTransactionViewController
+//            updateTransactionVC.modalTransitionStyle = .crossDissolve
+//            updateTransactionVC.modalPresentationStyle = .fullScreen
+//            updateTransactionVC.transactionDetails = transactionsListArray[indexPath.row]
+//            self.present(updateTransactionVC, animated: true)
+>>>>>>> e0e6825da9059e02b32efbcb9c2d8b9aa4a61de7
         } else {
             self.view.makeToast("Only manual transactions can be edited", duration: 3.0, position: .bottom)
         }

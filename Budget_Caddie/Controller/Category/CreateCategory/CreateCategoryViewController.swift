@@ -62,9 +62,15 @@ class CreateCategoryViewController: UIViewController {
         }
     }
     @IBAction func didClickMoreCategory(_ sender: UIButton) {
+<<<<<<< HEAD
         let defaultCategoryVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SelectDefaultCategoriesVCID") as! SelectDefaultCategoriesViewController
         defaultCategoryVC.modalPresentationStyle = .fullScreen
         self.present(defaultCategoryVC, animated: true)
+=======
+//        let defaultCategoryVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SelectDefaultCategoriesVCID") as! SelectDefaultCategoriesViewController
+//        defaultCategoryVC.modalPresentationStyle = .fullScreen
+//        self.present(defaultCategoryVC, animated: true)
+>>>>>>> e0e6825da9059e02b32efbcb9c2d8b9aa4a61de7
     }
     
     @IBAction func didClickCustomCategoryButton(_ sender: UIButton) {
