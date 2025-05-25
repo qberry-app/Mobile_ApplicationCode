@@ -1,21 +1,61 @@
-**Ways on how to use the Budget Caddie mobile application.**
+**Downloading & Installing the Budget Caddie Mobile Application**
 
-///////////////////////////////////////////////////////
+**✅ Option 1: Install via GitHub Web Interface (Default Method)**
 
-**Install using default method**
+Visit the GitHub repository.
 
-Step 1 - Click on green color code button on the gitHub page.
+Click the green “Code” button.
 
-Step 2 - Click on Download Zip
+Select “Download ZIP”.
 
-Step 3 - Once the file got downloaded Unzip the zip file
+Once the download completes, unzip the archive.
 
-Step 4 - Open the Mobile_ApplicationCode-Version1.0 folder
+Navigate to the Mobile_ApplicationCode-Version1.0 folder.
 
-Step 5 - Open Budget_Caddie.xcworkspace file.
+Open the Budget_Caddie.xcworkspace file in Xcode.
 
-Step 6 - Run the application
+Build and run the application.
 
-//////////////////////////////////////////////////////
+**✅ Option 2: Install via Terminal (Recommended Method)**
 
-**Note** - Instead of downloading use terminal commands to copy the project files to local storeage. Use Version 1.0 which is the latest version. 
+Instead of downloading the ZIP file manually, you can clone the latest version (Version1.0) using terminal commands.
+
+Steps:
+bash
+Copy
+Edit
+git clone -b Version1.0 https://github.com/qberry-app/Mobile_ApplicationCode.git
+
+cd Mobile_ApplicationCode
+
+✅ This ensures you are using the latest Version1.0 branch.
+
+⚙️ Pod Installation (Dependency Setup)
+
+The project already includes the required CocoaPods configuration.
+
+If you face issues or want to update to the latest pod versions:
+
+bash
+Copy
+Edit
+cd path/to/project/directory
+pod update
+Or, to reinstall the pods as they were initially configured:
+
+bash
+Copy
+Edit
+pod install
+After pod installation, open the workspace:
+
+bash
+Copy
+Edit
+open Budget_Caddie.xcworkspace
+📋 Requirements
+A Mac machine
+
+Xcode (latest version recommended)
+
+iOS Simulator with the latest iOS version or a real iOS device
